@@ -1,0 +1,9 @@
+# Ignore ffmpeg archives and build directories
+ffmpeg-essentials.7z
+ffmpeg-*-essentials_build/
+
+# Ignore generated video files
+*.mp4
+
+# Ignore numbered directories containing generated content
+[0-9][0-9][0-9]/
