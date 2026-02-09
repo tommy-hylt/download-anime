@@ -14,7 +14,7 @@ function isNumericDir(name) {
 }
 
 function main() {
-  const title = process.argv[2] || '火星異種';
+  const title = process.argv[2] || 'Anime';
   const quality = process.argv[3] || '720p';
   const srcName = `${quality}.mp4`;
 

@@ -64,7 +64,7 @@ async function combineTsToMp4() {
             const ffmpegPath = path.join('..', 'ffmpeg-2026-02-04-git-627da1111c-essentials_build', 'bin', 'ffmpeg.exe');
             // FFmpeg command
             // -y to overwrite output files without asking if they already exist (though we check for existence above)
-            const ffmpegCommand = `"${ffmpegPath}" -f concat -safe 0 -i "${inputListFilePath}" -c copy -y "${outputMp4Path}"`;        console.log(`Combining .ts files in ${dirName} to ${outputMp4Path}...`);
+            const ffmpegCommand = `"${ffmpegPath}" -f concat -safe 0 -i "${inputListFilePath}" -c:v libx264 -c:a aac -y "${outputMp4Path}"`;        console.log(`Combining .ts files in ${dirName} to ${outputMp4Path}...`);
         
         try {
             // Run ffmpeg in the target folder's directory
